@@ -741,46 +741,27 @@ html.no-loader .loader { display: none; }
 .video-band.pack-video { padding: 0; }
 .pack-media:has([data-video]) .media-fallback { display: none; }
 
-/* =====================================================================
-   THEME: GOLD PRIMARY  (gold #B8892D, navy #0D1C42, cream #FCF9EA)
-   Gold is the page color, navy is text, cream is cards and accents.
-   ===================================================================== */
-:root {
-  --ink: #0d1c42;
-  --ink-2: #14275a;
-  --ink-soft: #26376a;
-  --orange: #fcf9ea;
-  --orange-deep: #0d1c42;
-  --paper: #b8892d;
-  --paper-2: #c79b40;
-  --white: #fcf9ea;
-  --line: #8f6a1d;
-  --kraft: #f1e6bf;
-  --kraft-top: #fff8dd;
-  --kraft-side: #d8c892;
-}
-.site-header { background: rgba(184, 137, 45, .94); }
-.btn.orange { color: #0d1c42; }
-.btn.light { background: #fcf9ea; border-color: #fcf9ea; }
-.hero h1 em, .accent { color: #fcf9ea; }
-.stage .chip b, .ticket .big { color: #0d1c42; }
-.channel .code { color: #0d1c42; }
-.field input, .field select, .field textarea, .opts label, .admin td input { background: #fffdf3; }
-.field input, .field select, .field textarea { border-color: #8f6a1d; }
-.opts label:has(input:checked) { background: #f1e6bf; }
-.results .col.low { background: #f4eccc; }
-.form-msg.ok { background: #e3f1e7; }
-.form-msg.err { background: #fbe6e4; }
-.floor { border-color: rgba(13, 28, 66, .25); }
-.floor::before { background-image: linear-gradient(rgba(13,28,66,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(13,28,66,.16) 1px, transparent 1px); }
-.carton.orange > i.t, .beam > i.t, .prod-a > i.t { background: #34497d; }
-.carton.orange > i.f, .carton.orange > i.b, .beam > i.f, .beam > i.b, .prod-a > i.f, .prod-a > i.b { background: #1b2d5e; }
-.carton.orange > i.l, .carton.orange > i.r, .beam > i.l, .beam > i.r, .prod-a > i.l, .prod-a > i.r { background: #0d1c42; }
-.wood > i.t { background: #e6d9ae; } .wood > i.f, .wood > i.b { background: #cdbd85; } .wood > i.l, .wood > i.r { background: #b3a26a; }
-.loader-bar { background: #a47a22; }
-.on-dark .tag, .on-dark .muted { color: #e8dfae; }
-.on-dark a:hover h3, .site-footer a:hover { color: #d8b05c; }
-.form .btn, .results .btn { background: #0d1c42; border-color: #0d1c42; color: #fcf9ea; box-shadow: 4px 4px 0 #b8892d; }
-.box-preview .cub > i.t { background: #ecdca6; }
-.box-preview .cub > i.f, .box-preview .cub > i.b { background: #d8c27c; }
-.box-preview .cub > i.l, .box-preview .cub > i.r { background: #b9a15a; }
+/* THEME: GOLD PRIMARY. Gold leads (buttons, bands, footer, logo), cream page, navy text. */
+.topbar { background: #b8892d; color: #0d1c42; }
+.topbar b { color: #0d1c42; font-weight: 700; }
+.btn { background: #b8892d; border-color: #b8892d; color: #0d1c42; box-shadow: 4px 4px 0 #0d1c42; }
+.btn:hover { box-shadow: 6px 6px 0 #0d1c42; }
+.btn:active { box-shadow: 1px 1px 0 #0d1c42; }
+.btn.ghost { background: transparent; border-color: #0d1c42; color: #0d1c42; box-shadow: none; }
+.btn.ghost:hover { background: #0d1c42; color: #fcf9ea; }
+.header-cta { box-shadow: 3px 3px 0 #0d1c42; }
+.btn.light { background: #fcf9ea; border-color: #fcf9ea; color: #0d1c42; box-shadow: 4px 4px 0 #0d1c42; }
+.on-dark, .site-footer { background: #b8892d; color: #0d1c42; }
+.on-dark .muted { color: #26376a; }
+.on-dark .tag { color: #0d1c42; }
+.on-dark .tag::before { background: repeating-linear-gradient(135deg, #fcf9ea 0 5px, #0d1c42 5px 10px); }
+.aisle { border-top-color: rgba(13, 28, 66, .35); }
+.aisle p { color: #0d1c42; }
+.aisle .num { background: #0d1c42; color: #fcf9ea; }
+a.aisle:hover h3, .site-footer a:hover { color: #fcf9ea; }
+.site-footer h4, .site-footer .base a { color: #0d1c42; }
+.site-footer .base { border-top-color: rgba(13, 28, 66, .35); }
+.cta-band .btn, .on-dark .btn, .site-footer .btn { background: #0d1c42; border-color: #0d1c42; color: #fcf9ea; box-shadow: 4px 4px 0 #fcf9ea; }
+.cta-band .btn.light, .on-dark .btn.light { background: #fcf9ea; border-color: #fcf9ea; color: #0d1c42; box-shadow: 4px 4px 0 #0d1c42; }
+table.rate thead th { background: #b8892d; color: #0d1c42; }
+.form .btn, .results .btn { background: #b8892d; border-color: #b8892d; color: #0d1c42; box-shadow: 4px 4px 0 #0d1c42; }
